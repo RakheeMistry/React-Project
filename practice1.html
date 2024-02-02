@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card with JSX</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        
+        var sty = {
+            padding:'10px',
+            width:'300px',
+            boxShadow:'0px 0px 10px black',
+            textAlign:'justify',
+            margin:"20px",
+
+        };
+        var divRef = (
+              <div style={sty}>
+                <img src="https://img.freepik.com/free-photo/businesswoman-posing_23-2148142829.jpg?w=360&t=st=1706102945~exp=1706103545~hmac=c8ef1f5ac4ea3e6ac348ee696b48a158b6309ee1c8a98e72e5b791c5eec2448b" height="200" width="100%" />
+                <h3>Geet Singh</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, cupiditate quos illum iste, quod harum eum illo molestias necessitatibus, voluptatum iusto fuga doloremque exercitationem vero autem dolor delectus atque adipisci?</p>
+                <button>User</button>
+            </div>
+        );
+        ReactDOM.render(divRef,document.getElementById("root"));
+    </script>
+</body>
+</html>

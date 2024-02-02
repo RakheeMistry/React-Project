@@ -1,0 +1,27 @@
+.nestedProductsContainer {
+    width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    height: 600px;
+}
+
+.nestedProductsContainer .left{
+    background-color: black;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nestedProductsContainer .right{
+    width: 70%;
+}
+
+.linkStyle{
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}

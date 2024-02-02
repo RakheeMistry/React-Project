@@ -1,0 +1,32 @@
+.contactBox{
+    display: flex;
+    flex-direction: column;
+}
+.contactDetail{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid black;
+}
+.contactDetail form{
+    gap: 20px;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.contactForm input{
+    height: 40px;
+    padding: 0 8px;
+}
+.contactForm label{
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background-color: white;
+    padding: 0 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,46 @@
+.Nav {
+    height: 70px;
+    background: linear-gradient(45deg, rgb(65, 189, 65), rgb(243, 243, 142));
+    display: flex;
+}
+.Title {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Title h2{
+    margin: 0px;
+    color: white;
+}
+.Menu {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 70px;
+}
+.icon{
+    margin: 40px;
+    font-size: 20px;
+}
+.Search {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search input{
+    padding: 5px;
+    border: none;
+    
+}
+#text1{
+    width: 90%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#text2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
