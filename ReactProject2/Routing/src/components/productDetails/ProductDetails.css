@@ -1,0 +1,16 @@
+.pdcontainer{
+    width:1100px;
+    height: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px green;
+    display: flex;
+}
+
+.pdcontainer .leftPanel {
+    width: 30%;
+}
+
+.pdcontainer .rightPanel {
+    width: 70%;
+    padding: 30px;
+}
