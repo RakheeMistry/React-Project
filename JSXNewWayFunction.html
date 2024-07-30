@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Container(property) {
+            var styles = {
+                backgroundColor: property.bgColor,
+                color: "white",
+                padding: "30px",
+                boxShadow: "0 0 10px red",
+                margin: "50px"
+            };
+            return (
+                <div style={styles}>
+                    <h2>{property.title}</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde a, magnam, in quo libero iste laborum ipsa adipisci dolores accusantium! Possimus repellendus commodi fugiat neque sint esse cupiditate ea ducimus officia itaque quasi quas hic facere, eum perspiciatis error rem quia nemo necessitatibus illum consequatur, at eius. Minima aliquam ratione, velit odit aut officiis beatae recusandae, reprehenderit quibusdam id fugit totam expedita. Neque natus aut in odit sunt itaque quisquam blanditiis earum debitis nesciunt laudantium perspiciatis non fugit nostrum error ipsa voluptatum iure, sit vel eligendi culpa soluta molestias? Illum, adipisci voluptas delectus corporis odit exercitationem expedita quod aliquam!</p>
+                </div>
+            );
+        }
+        function Main() {
+            return (
+                <div><Container title="First" bgColor="lightpink" />
+                    <Container title="Second" bgColor="lightblue"/></div>
+            );
+        }
+        ReactDOM.render(Main(), document.getElementById("root"));
+    </script>
+</body>
+
+</html>
