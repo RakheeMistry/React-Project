@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <div id="root1"></div>
+        <div id="root2"></div>
+        <div id="root3"></div>
+        <div id="root4"></div>
+        <script>
+            // create single react element (h1)
+            var h1Ref = React.createElement("h1",null,'Rakhee');
+            ReactDOM.render(h1Ref,document.getElementById('root'));
+            // create single react element (p)
+            var paraRef = React.createElement("p",null,'Rakhee is beautifull.');
+            ReactDOM.render(paraRef,document.getElementById('root1'));
+            // create single react element with attribute (img)
+            var imgRef = React.createElement("img",{width: "500", src:"https://tse3.mm.bing.net/th?id=OIP.dJTqBQy3mMnMdI8klN_kHAHaGT&pid=Api&P=0&h=180",alt:"pic", height:"300",});
+            ReactDOM.render(imgRef,document.getElementById('root2'));
+            // create nested react element with attribute
+            var container = React.createElement("div",{style:{backgroundColor:'green', color:'white', padding:'20px'}},
+            React.createElement("h2",null,"H2 element"));
+            ReactDOM.render(container,document.getElementById("root3"));
+            // create array of nested react element with attribute
+            var container1 = React.createElement("div",{style:{backgroundColor:'lightpink',padding:'10px'}},
+            [React.createElement("h2",null,"H2 element"),
+            React.createElement("p",null,"Paragraph element"),]);
+            ReactDOM.render(container1,document.getElementById("root4"));
+        </script>
+    </body>
+</html>
