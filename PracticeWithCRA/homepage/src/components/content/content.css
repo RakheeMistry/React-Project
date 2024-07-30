@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.detail{
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 40px;
+    line-height: 20px;
+}
+.tit{
+    font-size: 70px;
+    font-weight: bolder;
+    line-height: 70px;
+}
+.desc{
+    margin-bottom: 30px;
+}
+button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+.btn11{
+    background-color: red;
+    border: 1px solid red;
+    margin-right: 15px;
+}
+.btn12{
+    background-color: white;
+}
+.plat{
+    display: flex;
+    flex-direction: column;
+}
+.plat1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+.display{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
