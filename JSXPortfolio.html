@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        var headerStyle = {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+            backgroundColor: 'black',
+        }
+        var headerSubStyle = {
+            display: 'flex',
+            width: '30%',
+            justifyContent: 'center',
+            alignItems: 'center',
+            color: 'white',
+        }
+        var headerSub1Style = {
+            display: 'flex',
+            width: '70%',
+            padding: '23px',
+            justifyContent: 'center',
+            alignItems: 'center',
+            border: '3px solid black',
+            fontSize: '18px',
+        }
+        var s = {
+            textDecoration: 'none',
+            marginRight: '80px',
+            color: 'white',
+        }
+        function header() {
+            return (
+                <div style={headerStyle}>
+                    <div style={headerSubStyle}><h2>Portfolio</h2></div>
+                    <div style={headerSub1Style}>
+                        <a href='' style={s}>Home</a>
+                        <a href='' style={s}>Profile</a>
+                        <a href='' style={s}>Resume</a>
+                        <a href='' style={s}>Contact</a>
+                    </div>
+                </div>
+            );
+        }
+        var contentStyle = {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+            marginTop: '90px',
+        }
+        var contentSubStyle = {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '30%',
+            padding: '2.6px',
+            //border:'3px solid black',
+        }
+        var contentSub1Style = {
+            width: '70%',
+            padding: '29px',
+            //border:'3px solid black',
+        }
+
+        function content() {
+            return (
+                <div style={contentStyle}>
+                    <div style={contentSubStyle}><img src="https://images.pexels.com/photos/7247412/pexels-photo-7247412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        style={{ width: '300px', height: '300px', borderRadius: '50%', }} /></div>
+                    <div style={contentSub1Style}><h3>Hi there!</h3>
+                        <h2>I am Sneha</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Odit aut laudantium velit quasi temporibus. Tempore repellendus aperiam sunt totam accusamus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam illo asperiores inventore totam quo sequi blanditiis suscipit soluta reprehenderit animi quidem commodi distinctio quasi sapiente modi laboriosam, iste minus ducimus.</p>
+                        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi consectetur similique non asperiores maxime cumque modi labore, fugit deleniti.</b></p>
+                    </div>
+                </div>
+            );
+        }
+        var content1Style = {
+            display: 'flex',
+            justifyContent: 'space-around',
+            margin: '90px',
+        }
+        var content1SubStyle = {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '20px',
+        }
+        function content1() {
+            return (
+                <div style={content1Style}>
+                    <div style={content1SubStyle}>
+                        <img src="https://images.pexels.com/photos/4065864/pexels-photo-4065864.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width='200px' height='200px' style={{borderRadius:'50%'}} />
+                        <p style={{fontSize:'20px'}}>Profile</p>
+                    </div>
+                    <div style={content1SubStyle}>
+                        <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width='200px' height='200px' style={{borderRadius:'50%'}} />
+                        <p style={{fontSize:'20px'}}>Resume</p>
+                    </div>
+                    <div style={content1SubStyle}>
+                        <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width='200px' height='200px' style={{borderRadius:'50%'}} />
+                        <p style={{fontSize:'20px'}}>Project</p>
+                    </div>
+                    <div style={content1SubStyle}><img src="https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width='200px' height='200px' style={{borderRadius:'50%'}} />
+                        <p style={{fontSize:'20px'}}>Contact</p>
+                    </div>
+                </div>
+            );
+        }
+        var footerStyle = {
+            backgroundColor: 'black',
+            color: 'white',
+            textAlign : 'center',
+            padding: '30px',
+        }
+        var footerSubStyle = {
+            fontSize:'30px',
+            padding:'20px',
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center',
+        }
+        function footer() {
+            return (
+                <div style={footerStyle}>
+                <div style={footerSubStyle}>
+                    <i class="bi bi-facebook" style={{color:'white',margin:'15px',}}></i>
+                    <i class="bi bi-twitter" style={{color:'white',margin:'15px',}}></i>
+                    <i class="bi bi-instagram" style={{color:'white',margin:'15px',}}></i>
+                    <i class="bi bi-linkedin" style={{color:'white',margin:'15px',}}></i>
+                </div> 
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab dicta modi tempore provident inventore numquam ad nemo iusto repellat cupiditate?</p>
+                </div>
+                <div style={{marginBottom:'10px',}}>copyright &copy; Reserved All Rights</div>
+                <div>Rakhee Mistry</div>   
+                </div>
+            );
+        }
+        function main() {
+            return (
+                <div>
+                    <div>{header()}</div>
+                    <div>{content()}</div>
+                    <div>{content1()}</div>
+                    <div>{footer()}</div>
+                </div>
+
+            );
+        }
+        ReactDOM.render(main(), document.getElementById('root'));
+    </script>
+</body>
+
+</html>
