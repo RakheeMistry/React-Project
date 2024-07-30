@@ -1,0 +1,27 @@
+.Nav {
+    height: 70px;
+    background: linear-gradient(45deg, black, red);
+    display: flex;
+}
+.Title {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Menu {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Title h2{
+    margin: 0px;
+    color: white;
+}
+
+.Menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}

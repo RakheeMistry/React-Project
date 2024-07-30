@@ -1,0 +1,17 @@
+.profileContainer{
+    display: flex;
+    box-shadow: 0 0 10px green;
+    width: 800px;
+    height:450px;
+    margin: 150px auto;
+}
+.imageSection{
+    width:45%;
+}
+.contentSection{
+    width:55%;
+    padding: 30px;
+}
+button{
+    margin: 20px;
+}
