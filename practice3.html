@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSX with direct return key of function</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function createList(){
+            return(<ul>
+                <li>Vegetable</li>
+                <li>Fruit</li>
+                <li>Eggs</li>
+                </ul>)
+        }
+        function createHeading(){
+            return(<h1>Grocery List</h1>)
+        }
+        function createParagraph(){
+            return(<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem porro voluptates eos totam ullam? Accusamus debitis voluptates alias eaque minima veniam sunt fugit Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias debitis, voluptates voluptate repudiandae inventore vel, excepturi quaerat numquam iste libero maiores culpa cum corrupti labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente numquam, ad dolores recusandae modi velit rem laborum doloremque aliquam vitae doloribus praesentium consequatur corporis vel quam porro. Accusamus, maxime facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero aperiam facere perspiciatis repudiandae deleniti perferendis, necessitatibus suscipit architecto fuga, unde doloribus, aspernatur quod provident iusto eveniet corporis nemo. Ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae pariatur corporis esse dolore sapiente! Molestiae incidunt perferendis distinctio mollitia?animi, enim ullam aliquid, obcaecati, assumenda nostrum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sapiente? Sunt non odio quod porro accusantium rerum deleniti, dicta at nostrum perferendis magnam alias. Libero, aliquam. Reiciendis labore dolore blanditiis.
+                </p>)
+        }
+        function main(){
+            return(<div>
+                <div>{createHeading()}</div>
+                <div>{createParagraph()}</div>
+                <div>{createList()}</div>
+                <div>{createParagraph()}</div>
+                </div>
+            )
+        }
+        ReactDOM.render(main(),document.getElementById("root"));
+    </script>
+</body>
+</html>
